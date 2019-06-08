@@ -36,3 +36,4 @@ sysinfo.txt
 *.unitypackage
 
 *.blend1
+**3rd_party**
