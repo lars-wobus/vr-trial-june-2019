@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1945572bfaf63ab41b69f52389dd07cd
+guid: 39caed5be8226fb4daf328d1553183a8
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
@@ -7,33 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: KitchenFloor
-    second: {fileID: 2100000, guid: b8d325e22741eb0478a97c80fbd58611, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: KitchenUnitBottom
-    second: {fileID: 2100000, guid: b2cfc60629f283b4393949a5959573f4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: KitchenUnitTop
-    second: {fileID: 2100000, guid: e177ddd750b249f49a79c69418a9dbd8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: LivingRoomFloor
-    second: {fileID: 2100000, guid: 028fabaddb89c1e44aa5934d1a0a4030, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: b7daf9036a2aa0d40b6c07dd482d92db, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: OutdoorFloor
-    second: {fileID: 2100000, guid: 74833bb0d989d5143aebca7e41a11e20, type: 2}
+    second: {fileID: 2100000, guid: 23f58c5a1c80b15468785931ce959f6a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
