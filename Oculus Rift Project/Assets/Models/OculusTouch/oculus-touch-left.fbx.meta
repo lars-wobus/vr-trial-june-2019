@@ -3,7 +3,37 @@ guid: 88a6c4ab1631a7e41a574e4b2c53c41f
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AnalogStick1
+    second: {fileID: 2100000, guid: ab962376753593f44a1a174ca8fe0b5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AnalogStick2
+    second: {fileID: 2100000, guid: 7b428502ecbc6dd4d90e4b68861d139e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Button1
+    second: {fileID: 2100000, guid: def32171699614d41aef86d18db77b98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Button2
+    second: {fileID: 2100000, guid: 7263749042cc016488f15266adf49f61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: a84035de03c82b9439338fd00231f65a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trigger
+    second: {fileID: 2100000, guid: dafb0fb104c7ebb43bcefbc67dc7070e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
