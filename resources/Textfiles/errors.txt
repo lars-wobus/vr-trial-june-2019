@@ -1,0 +1,7 @@
+NullReferenceException: Object reference not set to an instance of an object
+OVRCameraRig.UpdateAnchors () (at Assets/3rd_party/Oculus/VR/Scripts/OVRCameraRig.cs:151)
+OVRCameraRig.Update () (at Assets/3rd_party/Oculus/VR/Scripts/OVRCameraRig.cs:131)
+
+Reason: Use of Singleton the wrong way
+OVRCameraRig.cs:151 > bool monoscopic = OVRManager.instance.monoscopic;
+Solution: Add OVRManager script somewhere into the scene
