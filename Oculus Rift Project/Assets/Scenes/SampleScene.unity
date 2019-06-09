@@ -570,6 +570,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 491897894}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &493139482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 493139483}
+  m_Layer: 0
+  m_Name: OculusTouchControllerLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &493139483
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493139482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1956766103}
+  m_Father: {fileID: 2125946536}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &538364849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1029,6 +1060,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734299979}
   m_CullTransparentMesh: 0
+--- !u!1 &776431094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 776431095}
+  m_Layer: 0
+  m_Name: OculusTouchControllerRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &776431095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776431094}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1112329636}
+  m_Father: {fileID: 2125946536}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &836118859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,7 +1493,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2125946536}
+    m_TransformParent: {fileID: 776431095}
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: c6f4ab02365c18e4b987a9da76ca4f65,
         type: 3}
@@ -1446,12 +1508,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: c6f4ab02365c18e4b987a9da76ca4f65,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.59
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c6f4ab02365c18e4b987a9da76ca4f65,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c6f4ab02365c18e4b987a9da76ca4f65,
         type: 3}
@@ -1476,7 +1538,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: c6f4ab02365c18e4b987a9da76ca4f65,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c6f4ab02365c18e4b987a9da76ca4f65,
         type: 3}
@@ -2525,8 +2587,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c512714afb333794cb98b4be940b3e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  touchControllerLeft: {fileID: 1956766103}
-  touchControllerRight: {fileID: 1112329636}
+  touchControllerLeft: {fileID: 493139483}
+  touchControllerRight: {fileID: 776431095}
 --- !u!1001 &1798398954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2638,7 +2700,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2125946536}
+    m_TransformParent: {fileID: 493139483}
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: 88a6c4ab1631a7e41a574e4b2c53c41f,
         type: 3}
@@ -2653,12 +2715,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 88a6c4ab1631a7e41a574e4b2c53c41f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.59
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 88a6c4ab1631a7e41a574e4b2c53c41f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 88a6c4ab1631a7e41a574e4b2c53c41f,
         type: 3}
@@ -2683,7 +2745,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 88a6c4ab1631a7e41a574e4b2c53c41f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 88a6c4ab1631a7e41a574e4b2c53c41f,
         type: 3}
@@ -3042,8 +3104,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1278121313}
-  - {fileID: 1956766103}
-  - {fileID: 1112329636}
+  - {fileID: 493139483}
+  - {fileID: 776431095}
   m_Father: {fileID: 2017657920}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
