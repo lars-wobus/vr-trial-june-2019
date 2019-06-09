@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Canister
+    second: {fileID: 2100000, guid: 0c93682be075f0c479fc02d0b1a59d0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Material
     second: {fileID: 2100000, guid: 97629b54cc90b1942b02c6954a9eb96f, type: 2}
   - first:
@@ -14,6 +19,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: No Name
     second: {fileID: 2100000, guid: 0c93682be075f0c479fc02d0b1a59d0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube
+    second: {fileID: 2100000, guid: 8166a912d94324848b1d973d4261b1e5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
