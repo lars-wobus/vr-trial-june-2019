@@ -11,11 +11,16 @@ public class OculusTouchController : MonoBehaviour
     [SerializeField]
     private Transform touchControllerRight;
 
+    private IParticleEmitter emitterLeft;
+    private IParticleEmitter emitterRight;
+
     private IRayCastController raycastController;
 
     private void Start()
     {
         raycastController = GetComponent<IRayCastController>();
+        emitterLeft = touchControllerLeft.GetComponentInChildren<IParticleEmitter>();
+        emitterRight = touchControllerRight.GetComponentInChildren<IParticleEmitter>();
     }
 
     private void Update()
@@ -56,13 +61,29 @@ public class OculusTouchController : MonoBehaviour
         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, LTouch))
         {
             Debug.Log("PrimaryIndexTrigger");
-            raycastController.EmitRaycast(touchControllerLeft.position, touchControllerLeft.forward);
+            //raycastController.EmitRaycast(touchControllerLeft.position, touchControllerLeft.forward);
+            emitterLeft.StartShooting();
+        }
+
+        if (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger, LTouch))
+        {
+            Debug.Log("PrimaryIndexTrigger");
+            //raycastController.EmitRaycast(touchControllerLeft.position, touchControllerLeft.forward);
+            emitterLeft.StopShooting();
         }
 
         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, RTouch))
         {
             Debug.Log("SecondaryIndexTrigger");
-            raycastController.EmitRaycast(touchControllerRight.position, touchControllerRight.forward);
+            //raycastController.EmitRaycast(touchControllerRight.position, touchControllerRight.forward);
+            emitterRight.StartShooting();
+        }
+
+        if (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger, RTouch))
+        {
+            Debug.Log("SecondaryIndexTrigger");
+            //raycastController.EmitRaycast(touchControllerRight.position, touchControllerRight.forward);
+            emitterRight.StopShooting();
         }
 
         if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger, LTouch))
