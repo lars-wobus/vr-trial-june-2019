@@ -2,63 +2,75 @@
 
 public class OculusTouchController : MonoBehaviour
 {
+    private const OVRInput.Controller LTouch = OVRInput.Controller.LTouch;
+    private const OVRInput.Controller RTouch = OVRInput.Controller.RTouch;
+
     [SerializeField]
     private Transform touchControllerLeft;
 
     [SerializeField]
     private Transform touchControllerRight;
 
-    void Update()
+    private IRayCastController raycastController;
+
+    private void Start()
     {
-        if (OVRInput.GetControllerPositionTracked(OVRInput.Controller.LTouch))
+        raycastController = GetComponent<IRayCastController>();
+    }
+
+    private void Update()
+    {
+        if (OVRInput.GetControllerPositionTracked(LTouch))
         {
-            touchControllerLeft.localPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.LTouch);
-            touchControllerLeft.localRotation = OVRInput.GetLocalControllerRotation(OVRInput.Controller.LTouch);
+            touchControllerLeft.localPosition = OVRInput.GetLocalControllerPosition(LTouch);
+            touchControllerLeft.localRotation = OVRInput.GetLocalControllerRotation(LTouch);
         }
             
 
-        if (OVRInput.GetControllerPositionTracked(OVRInput.Controller.RTouch))
+        if (OVRInput.GetControllerPositionTracked(RTouch))
         {
-            touchControllerRight.localPosition = OVRInput.GetLocalControllerPosition(OVRInput.Controller.RTouch);
-            touchControllerRight.localRotation = OVRInput.GetLocalControllerRotation(OVRInput.Controller.RTouch);
+            touchControllerRight.localPosition = OVRInput.GetLocalControllerPosition(RTouch);
+            touchControllerRight.localRotation = OVRInput.GetLocalControllerRotation(RTouch);
         }
 
-        if (OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.LTouch))
+        if (OVRInput.GetDown(OVRInput.Button.One, LTouch))
         {
             Debug.Log("1");
         }
 
-        if (OVRInput.GetDown(OVRInput.Button.Two, OVRInput.Controller.LTouch))
+        if (OVRInput.GetDown(OVRInput.Button.Two, LTouch))
         {
             Debug.Log("2");
         }
 
-        if (OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.RTouch))
+        if (OVRInput.GetDown(OVRInput.Button.One, RTouch))
         {
             Debug.Log("3");
         }
 
-        if (OVRInput.GetDown(OVRInput.Button.Two, OVRInput.Controller.RTouch))
+        if (OVRInput.GetDown(OVRInput.Button.Two, RTouch))
         {
             Debug.Log("4");
         }
 
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch))
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, LTouch))
         {
             Debug.Log("PrimaryIndexTrigger");
+            raycastController.EmitRaycast(touchControllerLeft.position, touchControllerLeft.forward);
         }
 
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, RTouch))
         {
             Debug.Log("SecondaryIndexTrigger");
+            raycastController.EmitRaycast(touchControllerRight.position, touchControllerRight.forward);
         }
 
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger, OVRInput.Controller.LTouch))
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger, LTouch))
         {
             Debug.Log("PrimaryHandTrigger");
         }
 
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger, OVRInput.Controller.RTouch))
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger, RTouch))
         {
             Debug.Log("SecondaryHandTrigger");
         }
