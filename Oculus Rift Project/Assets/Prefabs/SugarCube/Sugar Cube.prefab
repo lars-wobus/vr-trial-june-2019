@@ -226,7 +226,8 @@ GameObject:
   - component: {fileID: 2011630289338815891}
   - component: {fileID: 25961947623628397}
   - component: {fileID: -6239582783525072387}
-  m_Layer: 0
+  - component: {fileID: 8360097481211339330}
+  m_Layer: 8
   m_Name: Sugar Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,9 +245,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 574760041534362067}
-  - {fileID: 2011630289734601229}
-  - {fileID: 5377540368699229339}
+  - {fileID: 8091102174593075563}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -305,6 +304,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 15
+--- !u!195 &8360097481211339330
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011630289338815889}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 5.3
+  m_Speed: 20
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 0
+  m_AutoRepath: 1
+  m_Height: 15.4
+  m_BaseOffset: 12.97
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &2011630289734601228
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +354,7 @@ Transform:
   m_LocalPosition: {x: 0, y: -12.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2011630289338815890}
+  m_Father: {fileID: 8091102174593075563}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2011630289734601230
@@ -373,14 +394,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3175838906950133062}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.17, y: 0.17, z: 0.17}
+  m_LocalScale: {x: 0.17000006, y: 0.17, z: 0.17000006}
   m_Children:
   - {fileID: 3063640531755554138}
-  m_Father: {fileID: 2011630289338815890}
+  m_Father: {fileID: 8091102174593075563}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7766811184449078069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -534,13 +555,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3576611194521805760}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4276167365271394909}
   - {fileID: 3102618542411737533}
-  m_Father: {fileID: 2011630289338815890}
+  m_Father: {fileID: 8091102174593075563}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!95 &7598688540321004713
@@ -1166,6 +1187,39 @@ Transform:
   - {fileID: 6043409294118336322}
   - {fileID: 538312098388449530}
   m_Father: {fileID: 4276167365271394909}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6844520168992443754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8091102174593075563}
+  m_Layer: 8
+  m_Name: Displacement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8091102174593075563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6844520168992443754}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 574760041534362067}
+  - {fileID: 2011630289734601229}
+  - {fileID: 5377540368699229339}
+  m_Father: {fileID: 2011630289338815890}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6934097270578211056
