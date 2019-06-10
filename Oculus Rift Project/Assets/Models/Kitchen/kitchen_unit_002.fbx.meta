@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Bucket
+    second: {fileID: 2100000, guid: be129dbe4a788b14881bcffc3820e4df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: KitchenFloor
     second: {fileID: 2100000, guid: b8d325e22741eb0478a97c80fbd58611, type: 2}
   - first:
@@ -34,6 +39,86 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: OutdoorFloor
     second: {fileID: 2100000, guid: 74833bb0d989d5143aebca7e41a11e20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blackboard
+    second: {fileID: 2100000, guid: 9e3e02dcf65bfcb40a443ea33f1257be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chairs
+    second: {fileID: 2100000, guid: fbb8a72d7cab140489115c9bc87c0ce9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_handles
+    second: {fileID: 2100000, guid: 7076dfb8ff53c394bb5141d276dbeaad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fence
+    second: {fileID: 2100000, guid: 250a7664875084843a457b1c6aa03d6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fridge
+    second: {fileID: 2100000, guid: 46541c8709a86fb47a90459e04f6c305, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fume_cupboard
+    second: {fileID: 2100000, guid: 10f33666311872b44aa3aba77d08a01d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: edcba556985b1ed418164c5d83e752bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitchen_unit_bottom
+    second: {fileID: 2100000, guid: 6c6a9f7fa0c7a56449468f10f50be3e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitchen_unit_top
+    second: {fileID: 2100000, guid: 7500cc8c6b83d094489e178b10ea2111, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitchen_wall
+    second: {fileID: 2100000, guid: ded2a981032ee3d46aea37eed0a1d11d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: oven
+    second: {fileID: 2100000, guid: 0211839e33a102b40ac8e9939dd0f6dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: painting_1
+    second: {fileID: 2100000, guid: 166ef14c372ef4d45b25430c574e95df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: painting_2
+    second: {fileID: 2100000, guid: 6f9db216b6d0dc74b8ae9260a06883a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: table
+    second: {fileID: 2100000, guid: 896189be62f84c64da13c020d7428ba2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_cupboard
+    second: {fileID: 2100000, guid: 1f45a5c7adb40264db446b589dbcdc1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_living_room
+    second: {fileID: 2100000, guid: 8b1e03879a311f24c939c67db0732264, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
