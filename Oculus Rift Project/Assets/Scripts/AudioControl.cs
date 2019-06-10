@@ -6,7 +6,7 @@ public class AudioControl : MonoBehaviour
     [SerializeField]
     private AudioData[] data;
 
-    public AudioData FindAudioSourceByName(string name)
+    public AudioData FindAudioClipByName(string name)
     {
         return data.First(element => element.Name == name);
     }

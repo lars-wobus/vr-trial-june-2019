@@ -8,8 +8,8 @@ public class AudioData
     private string name;
 
     [SerializeField]
-    private AudioSource audioSource;
+    private AudioClip audioClip;
 
     public string Name => name;
-    public AudioSource AudioSource => audioSource;
+    public AudioClip AudioClip => audioClip;
 }

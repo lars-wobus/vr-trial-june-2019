@@ -11,16 +11,28 @@ public class OculusTouchController : MonoBehaviour
     [SerializeField]
     private Transform touchControllerRight;
 
+    [SerializeField]
+    private AudioControl audioControl;
+
+    [SerializeField]
+    private AudioSource audioSource;
+
     private IParticleEmitter emitterLeft;
     private IParticleEmitter emitterRight;
 
     private IRayCastController raycastController;
+
+    private AudioClip shootSoundLeft;
+    private AudioClip shootSoundRight;
 
     private void Start()
     {
         raycastController = GetComponent<IRayCastController>();
         emitterLeft = touchControllerLeft.GetComponentInChildren<IParticleEmitter>();
         emitterRight = touchControllerRight.GetComponentInChildren<IParticleEmitter>();
+
+        shootSoundLeft = audioControl.FindAudioClipByName("Shoot_2").AudioClip;
+        shootSoundRight = audioControl.FindAudioClipByName("Shoot_1").AudioClip;
     }
 
     private void Update()
@@ -63,6 +75,9 @@ public class OculusTouchController : MonoBehaviour
             Debug.Log("PrimaryIndexTrigger");
             //raycastController.EmitRaycast(touchControllerLeft.position, touchControllerLeft.forward);
             emitterLeft.StartShooting();
+            audioSource.clip = shootSoundLeft;
+            audioSource.loop = true;
+            audioSource.Play();
         }
 
         if (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger, LTouch))
@@ -70,6 +85,7 @@ public class OculusTouchController : MonoBehaviour
             Debug.Log("PrimaryIndexTrigger");
             //raycastController.EmitRaycast(touchControllerLeft.position, touchControllerLeft.forward);
             emitterLeft.StopShooting();
+            audioSource.Stop();
         }
 
         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, RTouch))
@@ -77,6 +93,7 @@ public class OculusTouchController : MonoBehaviour
             Debug.Log("SecondaryIndexTrigger");
             //raycastController.EmitRaycast(touchControllerRight.position, touchControllerRight.forward);
             emitterRight.StartShooting();
+            audioSource.PlayOneShot(shootSoundRight);
         }
 
         if (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger, RTouch))
