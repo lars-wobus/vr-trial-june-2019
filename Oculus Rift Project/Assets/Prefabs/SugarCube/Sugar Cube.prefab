@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 2011630289338815892}
   - component: {fileID: 2011630289338815891}
   - component: {fileID: 25961947623628397}
+  - component: {fileID: -6239582783525072387}
   m_Layer: 0
   m_Name: Sugar Cube
   m_TagString: Untagged
@@ -291,6 +292,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 2011630289338815890}
+--- !u!114 &-6239582783525072387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011630289338815889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da71af37df51fea468689787c7769a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 15
 --- !u!1 &2011630289734601228
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,10 +397,10 @@ MonoBehaviour:
   offset: {x: 0, y: 20, z: 0}
   lifebar: {fileID: 4981121170720436610}
   colors:
-  - {r: 0, g: 0.78431374, b: 0, a: 0}
-  - {r: 0.78431374, g: 0.78431374, b: 0, a: 0}
-  - {r: 0.78431374, g: 0.47058824, b: 0, a: 0}
-  - {r: 0.78431374, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0.78431374, b: 0, a: 1}
+  - {r: 0.78431374, g: 0.78431374, b: 0, a: 1}
+  - {r: 0.78431374, g: 0.47058824, b: 0, a: 1}
+  - {r: 0.78431374, g: 0, b: 0, a: 1}
 --- !u!1 &3305749486970901208
 GameObject:
   m_ObjectHideFlags: 0

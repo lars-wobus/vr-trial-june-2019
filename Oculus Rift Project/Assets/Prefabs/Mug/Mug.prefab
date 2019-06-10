@@ -403,10 +403,10 @@ MonoBehaviour:
   offset: {x: 0, y: 20, z: 0}
   lifebar: {fileID: 3195035990756909623}
   colors:
-  - {r: 0, g: 0.78431374, b: 0, a: 0}
-  - {r: 0.78431374, g: 0.78431374, b: 0, a: 0}
-  - {r: 0.78431374, g: 0.47058824, b: 0, a: 0}
-  - {r: 0.78431374, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0.78431374, b: 0, a: 1}
+  - {r: 0.78431374, g: 0.78431374, b: 0, a: 1}
+  - {r: 0.78431374, g: 0.47058824, b: 0, a: 1}
+  - {r: 0.78431374, g: 0, b: 0, a: 1}
 --- !u!1 &3010126449300187235
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,6 +605,7 @@ GameObject:
   - component: {fileID: 3550369132228123475}
   - component: {fileID: 3550369132228123472}
   - component: {fileID: 3771643024600867276}
+  - component: {fileID: 176881710786292205}
   m_Layer: 0
   m_Name: Mug
   m_TagString: Untagged
@@ -672,6 +673,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   character: {fileID: 3550369132228123473}
+--- !u!114 &176881710786292205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3550369132228123486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da71af37df51fea468689787c7769a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 25
 --- !u!1 &3575212692973290757
 GameObject:
   m_ObjectHideFlags: 0

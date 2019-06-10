@@ -24,8 +24,7 @@ public class Lifebar : MonoBehaviour
     {
         var clamped = Mathf.Clamp(value, 0, 1);
         lifebar.fillAmount = clamped;
-        
-        
+        ChangeColor(clamped);
     }
 
     private void ChangeColor(float value)
