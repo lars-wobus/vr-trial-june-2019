@@ -3952,6 +3952,7 @@ Transform:
   - {fileID: 975476174}
   - {fileID: 544608744}
   - {fileID: 589240728}
+  - {fileID: 1612346442}
   m_Father: {fileID: 1742864996}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
@@ -4956,6 +4957,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 79.156, y: 79.156, z: 81.045685}
   m_Center: {x: -0.000003840502, y: -0.000061080544, z: -1.522831}
+--- !u!4 &1612346442 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2011630289338815890, guid: 2270697e97577344c950957240266651,
+    type: 3}
+  m_PrefabInstance: {fileID: 2011630290949022168}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1614157668
 GameObject:
   m_ObjectHideFlags: 0
@@ -7066,6 +7073,75 @@ MonoBehaviour:
   resetTrackerOnLoad: 0
   AllowRecenter: 1
   _reorientHMDOnControllerRecenter: 1
+--- !u!1001 &2011630290949022168
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1324702749}
+    m_Modifications:
+    - target: {fileID: 2011630289338815889, guid: 2270697e97577344c950957240266651,
+        type: 3}
+      propertyPath: m_Name
+      value: Sugar Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011630289338815890, guid: 2270697e97577344c950957240266651,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -45.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011630289338815890, guid: 2270697e97577344c950957240266651,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 124.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011630289338815890, guid: 2270697e97577344c950957240266651,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 45.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011630289338815890, guid: 2270697e97577344c950957240266651,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011630289338815890, guid: 2270697e97577344c950957240266651,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011630289338815890, guid: 2270697e97577344c950957240266651,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011630289338815890, guid: 2270697e97577344c950957240266651,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011630289338815890, guid: 2270697e97577344c950957240266651,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011630289338815890, guid: 2270697e97577344c950957240266651,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011630289338815890, guid: 2270697e97577344c950957240266651,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011630289338815890, guid: 2270697e97577344c950957240266651,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2270697e97577344c950957240266651, type: 3}
 --- !u!1001 &3550369132758043321
 PrefabInstance:
   m_ObjectHideFlags: 0
