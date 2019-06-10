@@ -685,11 +685,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mug
       objectReference: {fileID: 0}
-    - target: {fileID: 3550369132228123486, guid: cb075dbfb6d54084682008419cadb428,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3550369132228123473, guid: cb075dbfb6d54084682008419cadb428,
         type: 3}
       propertyPath: m_LocalPosition.x
