@@ -10,7 +10,32 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: a3996ff00e37a6f498c52cd3f94041c6,
         type: 3}
       propertyPath: m_Name
-      value: kitchen_unit_001
+      value: kitchen_unit_001 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: a3996ff00e37a6f498c52cd3f94041c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -2101572865383176141, guid: a3996ff00e37a6f498c52cd3f94041c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 794413900333716849, guid: a3996ff00e37a6f498c52cd3f94041c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -8788592165363257812, guid: a3996ff00e37a6f498c52cd3f94041c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -1327673207729269819, guid: a3996ff00e37a6f498c52cd3f94041c6,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a3996ff00e37a6f498c52cd3f94041c6,
         type: 3}
