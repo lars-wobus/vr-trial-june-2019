@@ -13,6 +13,8 @@ public class EnemyController : MonoBehaviour
     private float startHealth;
     private NavMeshAgent agent;
 
+    public EnemyCounter GetEnemyCounter { get; set; }
+
     private void Start()
     {
         lifebar = GetComponentInChildren<Lifebar>();
@@ -44,6 +46,7 @@ public class EnemyController : MonoBehaviour
         if (health == 0)
         {
             Destroy(gameObject);
+            GetEnemyCounter?.ReduceCountByOne();
             return;
         }
         lifebar.SetLife(health / startHealth);
