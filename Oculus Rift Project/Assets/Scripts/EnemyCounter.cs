@@ -5,6 +5,9 @@ public class EnemyCounter : MonoBehaviour
     [SerializeField]
     private EnemyController[] controllers;
 
+    [SerializeField]
+    private SceneLoader sceneLoader;
+
     private int remaining = 0;
 
     private void Start()
@@ -13,6 +16,7 @@ public class EnemyCounter : MonoBehaviour
         {
             c.GetEnemyCounter = this;
         }
+        remaining = controllers.Length;
     }
 
     public void ReduceCountByOne()
@@ -21,6 +25,7 @@ public class EnemyCounter : MonoBehaviour
         if (remaining <= 0)
         {
             Debug.Log("Player has won");
+            sceneLoader.LoadScene("WinningScreen");
         }
     }
 }
