@@ -45,6 +45,10 @@ The main intention of this project was to develop a VR game within 3 days.
 - No sound effects except for shooting
 - No complex baked lighting, because of technical difficulties
 
+# Unused Assets
+
+- Model of a spoon which was planned for close combat attacks
+
 ## Dependencies / Other Packages
 
 - Oculus (Desktop) 1.36.0
