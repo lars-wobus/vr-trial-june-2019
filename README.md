@@ -1,4 +1,4 @@
-# vr-trial-june-2019
+# VR Overdose
 
 ![First person view during gameplay](resources/Screenshots/main_view.PNG)
 
@@ -31,7 +31,7 @@ The main intention of this project was to develop a VR game within 3 days.
 
 ## Controls
 
-- Use the start button of the left Oculus Touch Controller to navigate between menues
+- Use the start button of the left Oculus Touch Controller to navigate between menus
 - Use the IndexTriggers of the left/right Oculus Touch Controllers to shoot
 
 ## Missing Features / Changes During The Development
@@ -41,7 +41,7 @@ The main intention of this project was to develop a VR game within 3 days.
 - Enemies cannot (re-)spawn
 - Enemies cannot walk on the kitchen floor
 - Player cannot teleport
-- Player cannot push/pull enemies, but instead can shoot two weapons
+- Player cannot push/pull enemies, but instead can shoot with two weapons
 - No sound effects except for shooting
 - No complex baked lighting, because of technical difficulties
 
