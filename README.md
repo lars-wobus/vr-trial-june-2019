@@ -1,5 +1,7 @@
 # vr-trial-june-2019
 
+![First person view during gameplay](resources/Screenshots/main_view.PNG)
+
 ## Summary
 
 The main intention of this project was to develop a VR game within 3 days. 
@@ -49,3 +51,19 @@ The main intention of this project was to develop a VR game within 3 days.
 - Further details: [manifest.json](https://github.com/lars-wobus/vr-trial-june-2019/blob/master/Oculus%20Rift%20Project/Packages/manifest.json)
 
 ## Image Gallery
+
+Splashscreen               |  Winning Screen           |  Loosing Screen
+:-------------------------:|:-------------------------:|:-------------------------:
+![](./resources/Screenshots/start_screen.PNG) | ![](./resources/Screenshots/winning_screen.PNG)  |  ![](./resources/Screenshots/loosing_screen.PNG)
+
+NPC 1 (coffee mug)    | NPC 2 (milk churn)     | NPC 3 (sugar cube)
+:-------------------------:|:-------------------------:|:-------------------------:
+![](./resources/Screenshots/mug_character.PNG) | ![](./resources/Screenshots/milk_churn_character.PNG) | ![](./resources/Screenshots/sugar_character.PNG)
+
+Early state of the main level | Out of bounds perspective | Experiementing with weapons in VR
+:-------------------------:|:-------------------------:|:-------------------------:
+![](./resources/Screenshots/main_level_20190608_1645.PNG) | ![](./resources/Screenshots/main_level_20190608_1320.PNG) | ![](./resources/Screenshots/main_level_20190609_2325.PNG)
+
+Final level from a third person perspective | Final level from another third person perspective
+:-------------------------:|:-------------------------:
+![](./resources/Screenshots/main_level_20190610_1.PNG) | ![](./resources/Screenshots/main_level_20190610_2.PNG)
