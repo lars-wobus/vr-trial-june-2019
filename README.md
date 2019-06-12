@@ -64,7 +64,7 @@ NPC 1 (coffee mug)    | NPC 2 (milk churn)     | NPC 3 (sugar cube)
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](./resources/Screenshots/mug_character.PNG) | ![](./resources/Screenshots/milk_churn_character.PNG) | ![](./resources/Screenshots/sugar_character.PNG)
 
-Early state of the main level | Out of bounds perspective | Experiementing with weapons in VR
+Early state of the main level | Out of bounds perspective | Experimenting with weapons in VR
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](./resources/Screenshots/main_level_20190608_1645.PNG) | ![](./resources/Screenshots/main_level_20190608_1320.PNG) | ![](./resources/Screenshots/main_level_20190609_2325.PNG)
 
